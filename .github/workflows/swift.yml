@@ -17,6 +17,8 @@ jobs:
       run: printenv
     - name: showAppDir
       run: ls -latr /Applications
+    - name: duOnV12
+      run: du -sh /Applications/Xcode_12.3.app
     - name: checkXCode
       run: xcversion list
     - name: checkInstalledXCode
