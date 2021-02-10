@@ -19,10 +19,12 @@ jobs:
       run: df -h
     - name: showAppDir
       run: ls -latr /Applications
-    - name: duOnV12
+    - name: duOnV12_3
       run: du -sh /Applications/Xcode_12.3.app
-    - name: checkXCode
-      run: xcversion list
+    - name: duOnV11
+      run: du -sh /Applications/Xcode_11.3.1.app
+    - name: duOnV12
+      run: du -sh /Applications/Xcode_12.app
     - name: checkInstalledXCode
       run: xcversion installed
     - name: Build
